@@ -1,0 +1,24 @@
+[project]
+name = "synthetic_data_generator"
+version = "0.1.0"
+description = "synthetic_data_generator using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "boto3",
+    "crewai[tools]>=0.95.0,<1.0.0"
+]
+
+[project.scripts]
+synthetic_data_generator = "synthetic_data_generator.main:run"
+run_crew = "synthetic_data_generator.main:run"
+train = "synthetic_data_generator.main:train"
+replay = "synthetic_data_generator.main:replay"
+test = "synthetic_data_generator.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

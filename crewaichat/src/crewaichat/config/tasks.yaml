@@ -1,0 +1,9 @@
+super_task:
+  description: >
+    1. Understand user input {input}
+    2. Identify what need to be done.
+    3. If you have relevant tool provided to you use that to perform the task.
+    4. If none of the tools are useful then based on knowledge you have either process the request or politely respond to your that you will not be able to fulfill the request.
+  expected_output: >
+    Appropriate response to the task or query provided by the user.
+  agent: super_agent

@@ -1,0 +1,14 @@
+generate_data:
+  description: >
+   "1. Read the given schema {schema}.\n"
+   "2. Identify allowed characters and other rules for each field from the given schema \n"
+   "3. Based on the allowed characters and other rules provided in schema generate Synthetic data for each field\n"
+   "4. generate output that matches with real world data but not the real data\n"
+   "5. Generate unique data for each field. No duplicate data is accepted\n"
+   "6. If generating data for special fields such as credit card numbers it should be generated according to card type rules. Try to use available tools for such purpose\n"
+   "7. Do not provide code"
+   "8. Generate 5 values for each field
+    9. Do not use any Personally Identifiable information"
+  expected_output: >
+   'Synthetic data in the .csv format'
+  agent: synthetic_data_generator

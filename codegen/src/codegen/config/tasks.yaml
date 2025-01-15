@@ -1,0 +1,18 @@
+develop_code:
+  description: >
+    Read given instructions {instructions}
+    Generate code based on the instructions
+    Organize code according to best practices
+  expected_output: >
+    A well written code which can run when executed.
+  agent: lead_software_developer
+
+review_code:
+  description: >
+    Review the code you got and review the code for any errors, vulnerability exposure, performance issues.
+    Provide necessary suggestion to improve the code
+    Provide modified code which can be put in place of original code where you find concerns
+  expected_output: >
+    Suggestions to improve the code.
+    Modified code if any
+  agent: code_reviewer

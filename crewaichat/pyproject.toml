@@ -1,0 +1,24 @@
+[project]
+name = "crewaichat"
+version = "0.1.0"
+description = "crewaichat using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "boto3",
+    "crewai[tools]>=0.95.0,<1.0.0"
+]
+
+[project.scripts]
+crewaichat = "crewaichat.main:run"
+run_crew = "crewaichat.main:run"
+train = "crewaichat.main:train"
+replay = "crewaichat.main:replay"
+test = "crewaichat.main:test"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

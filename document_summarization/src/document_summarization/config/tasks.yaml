@@ -1,0 +1,11 @@
+summarize:
+  description: >
+    Read the document provided {path}
+    If provided path is folder/directory read all documents recursively from that folder
+    Understand the context and the content of the document
+    Based on your understanding summarize the documents in 300-500 words. Give pointers
+  expected_output: >
+    300-500 word summary in below format
+    Topic : <Topic of the doc>
+    Summary : <Summary>
+  agent: document_summarizer
